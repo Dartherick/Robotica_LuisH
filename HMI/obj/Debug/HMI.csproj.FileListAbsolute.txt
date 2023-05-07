@@ -1,0 +1,11 @@
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\bin\Debug\HMI.exe.config
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\bin\Debug\HMI.exe
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\bin\Debug\HMI.pdb
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\obj\Debug\HMI.csproj.AssemblyReference.cache
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\obj\Debug\HMI.csproj.SuggestedBindingRedirects.cache
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\obj\Debug\HMI.Form1.resources
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\obj\Debug\HMI.Properties.Resources.resources
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\obj\Debug\HMI.csproj.GenerateResource.cache
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\obj\Debug\HMI.csproj.CoreCompileInputs.cache
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\obj\Debug\HMI.exe
+C:\Users\maxel\Desktop\Dartherick\Robotica_LuisH\HMI\obj\Debug\HMI.pdb
