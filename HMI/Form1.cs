@@ -40,6 +40,8 @@ namespace HMI
 
             string[] BaudRatesList = { "9600", "38400", "57600", "115200" };
             BaudRate_ComboBox.DataSource = BaudRatesList;
+            EnableButtons(false);
+            CloseSerial_Port.Enabled = false;
         }
 
 
@@ -47,10 +49,14 @@ namespace HMI
         {
             try
             {
-            SerialPortConnection.PortName = Port_ComboBox.Text;
-            SerialPortConnection.BaudRate = Convert.ToInt32(BaudRate_ComboBox.Text);
-            SerialPortConnection.Open();
-            ProgressBar.Value = 100;
+                SerialPortConnection.PortName = Port_ComboBox.Text;
+                SerialPortConnection.BaudRate = Convert.ToInt32(BaudRate_ComboBox.Text);
+                SerialPortConnection.Open();
+                ProgressBar.Value = 100;
+                EnableButtons(true);
+                CloseSerial_Port.Enabled = true;
+                OpenSerial_Button.Enabled = false;
+                Refresh_Button.Enabled = false;
             }
             catch (Exception error)
             {
@@ -70,6 +76,10 @@ namespace HMI
                 {
                     SerialPortConnection.Close();
                     ProgressBar.Value = 0;
+                    EnableButtons(false);
+                    CloseSerial_Port.Enabled = false;
+                    OpenSerial_Button.Enabled = true;
+                    Refresh_Button.Enabled = true;
                 }
                 catch (Exception error)
                 {
@@ -131,7 +141,7 @@ namespace HMI
             {
                 try
                 {
-                SerialPortConnection.WriteLine("(" + RedPos.ToString() + "," + GreenPos.ToString() + "," + BluePos.ToString() + ")");
+                SerialPortConnection.WriteLine(RedPos.ToString() + "|" + GreenPos.ToString() + "|" + BluePos.ToString());
                 MessageBox.Show("(" + RedPos.ToString() + "," + GreenPos.ToString() + "," + BluePos.ToString() + ")");
                 }
                 catch (Exception error)

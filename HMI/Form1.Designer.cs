@@ -266,7 +266,7 @@
             // 
             // OpenSerial_Button
             // 
-            this.OpenSerial_Button.Location = new System.Drawing.Point(950, 224);
+            this.OpenSerial_Button.Location = new System.Drawing.Point(24, 133);
             this.OpenSerial_Button.Name = "OpenSerial_Button";
             this.OpenSerial_Button.Size = new System.Drawing.Size(75, 23);
             this.OpenSerial_Button.TabIndex = 21;
@@ -276,7 +276,7 @@
             // 
             // CloseSerial_Port
             // 
-            this.CloseSerial_Port.Location = new System.Drawing.Point(1099, 224);
+            this.CloseSerial_Port.Location = new System.Drawing.Point(195, 133);
             this.CloseSerial_Port.Name = "CloseSerial_Port";
             this.CloseSerial_Port.Size = new System.Drawing.Size(75, 23);
             this.CloseSerial_Port.TabIndex = 22;
@@ -286,12 +286,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.CloseSerial_Port);
+            this.groupBox1.Controls.Add(this.Refresh_Button);
             this.groupBox1.Controls.Add(this.ProgressBar);
+            this.groupBox1.Controls.Add(this.OpenSerial_Button);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.Port_ComboBox);
             this.groupBox1.Controls.Add(this.BaudRate_ComboBox);
-            this.groupBox1.Location = new System.Drawing.Point(904, 91);
+            this.groupBox1.Location = new System.Drawing.Point(885, 105);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(293, 214);
             this.groupBox1.TabIndex = 23;
@@ -300,14 +303,14 @@
             // 
             // ProgressBar
             // 
-            this.ProgressBar.Location = new System.Drawing.Point(46, 174);
+            this.ProgressBar.Location = new System.Drawing.Point(24, 174);
             this.ProgressBar.Name = "ProgressBar";
-            this.ProgressBar.Size = new System.Drawing.Size(224, 23);
+            this.ProgressBar.Size = new System.Drawing.Size(246, 23);
             this.ProgressBar.TabIndex = 24;
             // 
             // Refresh_Button
             // 
-            this.Refresh_Button.Location = new System.Drawing.Point(949, 337);
+            this.Refresh_Button.Location = new System.Drawing.Point(112, 133);
             this.Refresh_Button.Name = "Refresh_Button";
             this.Refresh_Button.Size = new System.Drawing.Size(75, 23);
             this.Refresh_Button.TabIndex = 24;
@@ -320,9 +323,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1209, 698);
-            this.Controls.Add(this.Refresh_Button);
-            this.Controls.Add(this.OpenSerial_Button);
-            this.Controls.Add(this.CloseSerial_Port);
             this.Controls.Add(this.Start_Button);
             this.Controls.Add(this.Reset_Button);
             this.Controls.Add(this.label2);
